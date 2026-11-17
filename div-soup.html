@@ -5,96 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Soupe de Div</title>
     <link href="style.css" rel="stylesheet">
-
 </head>
 <body>
-<div class="title_1">La poulaille du terroir</div>
-<div>
-    <div class="nav">
+
+<header> 
+    
+    <section>
+        <nav class="nav">
         <img src="img/chicken-159496_120.png">
-        <div class="nav_link" onclick="window.location='#actualites'">Actualités</div>
-        <div class="nav_link" onclick="window.location='#articles'">Derniers articles</div>
-        <div class="nav_link" onclick="window.location='#nous_connaitre'">Nous connaitre</div>
-    </div>
-</div>
+        <a class="nav_link" href"#actualites">Actualités</a>
+        <a class="nav_link" href"#articles">Derniers articles</a>
+        <a class="nav_link" href"#nous_connaitre">Nous connaitre</a>
+        </nav>
+    </section>
+    <search>
 <form class="center">
-    <div class="section">
-        <div class="label" id="recherche"><span>Recherche </span> <input class="search_input"></div>
-    </div>
+    <section class="section">
+        <label class="label" id="recherche"><span>Recherche </span> <input class="search_input"></label>
+    </section>
 </form>
-<div class="section">
-    <div id="actualites" class="title_2">Actualités</div>
+</search>
+</header>
+
+<main>
+        <h1 class="title_1">La poulaille du terroir</h1>
+<section class="section">
+    <h2 id="actualites" class="title_2">Actualités</h2>
+    <figure>  
     <img src="img/village-9720411_320.png">
-    <div class="small">Image par <span class="link"
-                                       onclick="window.location.href='https://pixabay.com/fr/users/soponyono-16867228/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9720411'">soponyono</span>
+    <figcaption class="small">Image par <span class="link" onclick="window.location.href='https://pixabay.com/fr/users/soponyono-16867228/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9720411'">soponyono</span>
         de
         <span  class="link" onclick="window.location.href='https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9720411'">Pixabay</span>
-    </div>
-    <div class="paragraphe">Le 20 octobre 2025</div>
-    <div class="paragraphe">Oyez oyez ! Tout va bien dans les chaumières ! La poule est en liberté ! Je répète, la poule
+    </figcaption>
+</figure>
+    <p class="paragraphe">Le 20 octobre 2025</p>
+    <p class="paragraphe">Oyez oyez ! Tout va bien dans les chaumières ! La poule est en liberté ! Je répète, la poule
         est en liberté !
-    </div>
-</div>
-<div class="section">
-    <div id="articles" class="title_2">Derniers articles</div>
+    </p>
+</section>
+
+<article class="section">
+    <h2 id="articles" class="title_2">Derniers articles</h2>
     <div class="grid">
-        <div class="card">
-            <div class="card_header">Attaque de renard</div>
-            <div class="card_date">15 octobre 2025</div>
-            <div class="card_content">Nous déplorons la disparition de 3 de nos plus belles poules ce
+        <article class="card">
+            <h3 class="card_header">Attaque de renard</h3>
+            <time class="card_date">15 octobre 2025</time>
+            <p class="card_content">Nous déplorons la disparition de 3 de nos plus belles poules ce
                 mercredi. Le renard a réussir à se glisser dans le poulailler.
-            </div>
-            <div class="link" onclick="window.location.href='#'">Lire la suite de l'article</div>
-        </div>
-        <div class="card">
-            <div class="card_header">Le poulailler</div>
-            <div class="card_date">10 octobre 2025</div>
-            <div class="card_content">Aujourd'hui nous avons installé un poulailler tout neuf ! Une amélioration
+            </p>
+            <nav class="link" onclick="window.location.href='#'">Lire la suite de l'article</nav>
+        </article>
+        <article class="card">
+            <h3 class="card_header">Le poulailler</h3>
+            <time class="card_date">10 octobre 2025</time>
+            <p class="card_content">Aujourd'hui nous avons installé un poulailler tout neuf ! Une amélioration
                 considérable du confort pour nos petites poupoules.
-            </div>
-            <div class="link" onclick="window.location.href='#'">Lire la suite de l'article</div>
-        </div>
-        <div class="card">
-            <div class="card_header">Un nouveau départ</div>
-            <div class="card_date">02 octobre 2025</div>
-            <div class="card_content">Après une longue carrière dans le monde du développement Web, nous décidons enfin
+            </p>
+            <nav class="link" onclick="window.location.href='#'">Lire la suite de l'article</nav>
+        </article>
+        <article class="card">
+            <h3 class="card_header">Un nouveau départ</h3>
+            <time class="card_date">02 octobre 2025</time>
+            <p class="card_content">Après une longue carrière dans le monde du développement Web, nous décidons enfin
                 de déménager à la campagne. Nous avons acheté 3 poules : Rouquine, Touffue et Jean-Michel. Nous espérons
                 qu'elles nous donneront beaucoup d'œufs !
-            </div>
-            <div class="link" onclick="window.location.href='#'">Lire la suite de l'article</div>
-        </div>
+            </p>
+            <nav class="link" onclick="window.location.href='#'">Lire la suite de l'article</nav>
+        </article>
     </div>
-</div>
-<div class="section">
-    <div id="nous_connaitre" class="title_2">Nous Connaître</div>
-    <div class="nous_connaitre">
-        <div>
-            <img src="img/ghost-8250317_320.png">
-            <div class="paragraphe">Casper</div>
-            <div class="small">Image par <span class="link"
-                                               onclick="window.location.href='https://pixabay.com/fr/users/madebytin-39325616/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8250317'">madebytin</span>
-                de
-                <span class="link"
-                      onclick="window.location.href='https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8250317'">Pixabay</span>
-            </div>
-        </div>
-        <div>
-            <img src="img/zombie-521243_320.png">
-            <div class="paragraphe">Zombie</div>
-            <div class="small">Image par <span class="link"
-                                               onclick="window.location.href='https://pixabay.com/fr/users/glamazon-481548/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=521243'">Amanda
-                Elizabeth</span> de <span class="link"
-                                          onclick="window.location.href='https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=521243'">Pixabay</span>
-            </div>
-        </div>
-
-    </div>
-<div>
+</article>
     <small  >
         Copyright La poularde -     2026
     </small>
+</main>
 
-</div>
-</div>
+<footer>
+    <section class="section">
+    <h2 id="nous_connaitre" class="title_2">Nous Connaître</h2>
+    <p class="nous_connaitre"</p>
+        <section>
+            <image>
+            <img src="img/ghost-8250317_320.png">
+            <p class="paragraphe">Casper</p>
+            <figcaption class="small">Image par <span class="link" onclick="window.location.href='https://pixabay.com/fr/users/madebytin-39325616/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8250317'">madebytin</span>
+                de
+                <span class="link" onclick="window.location.href='https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8250317'">Pixabay</span>
+            </figcaption>
+            </image>
+        </section>
+        <section>
+            <img src="img/zombie-521243_320.png">
+            <p class="paragraphe">Zombie</p>
+            <image>
+            <figcaption class="small">Image par <span class="link" onclick="window.location.href='https://pixabay.com/fr/users/glamazon-481548/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=521243'">Amanda
+                Elizabeth</span> de <span class="link" onclick="window.location.href='https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=521243'">Pixabay</span>
+            </figcaption>
+            </image>
+        </section>
+    </section>
+</footer>
 </body>
 </html>
